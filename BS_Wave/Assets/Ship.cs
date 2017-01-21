@@ -17,7 +17,7 @@ public class Ship : MonoBehaviour {
 	{
 		if (other.gameObject.layer == 11) {
 			Debug.Log ("ayy");
-			GetComponent<Rigidbody2D> ().AddTorque (-5f);
+			GetComponent<Rigidbody2D> ().AddTorque (-1f*GetComponent<Rigidbody2D>().mass*GetComponent<Rigidbody2D>().mass);
 			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (5f,5f));
 		}
 	}
