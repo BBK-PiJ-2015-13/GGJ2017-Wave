@@ -31,7 +31,7 @@ public class WaveScript : MonoBehaviour
 		cam.GetComponent<Camera> ().orthographicSize = 3f + 1f * Mathf.Log(Mathf.Abs(rb2d.velocity.x)+2, 1.5f)/3;
 		//GetComponent<Rigidbody2D> ().velocity = new Vector2 (0.0f, 0.0f);
 		transform.localScale=new Vector2(1f * Mathf.Log(Mathf.Abs(rb2d.velocity.x/3)+2, 2f),1f * Mathf.Log(Mathf.Abs(rb2d.velocity.x/3)+2, 2f));
-		rb2d.velocity =(new Vector2(rb2d.velocity.x-Input.GetAxis ("Horizontal")/10,0f));
+		rb2d.velocity =(new Vector2(rb2d.velocity.x+Input.GetAxis ("Horizontal")/10,0f));
 		GetComponent<BuoyancyEffector2D> ().density = 1f * rb2d.velocity.x/3*rb2d.velocity.x/3;
 		GetComponent<BuoyancyEffector2D> ().flowMagnitude = 1f * rb2d.velocity.x/3;
 	}
