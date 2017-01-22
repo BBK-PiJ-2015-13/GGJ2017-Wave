@@ -78,6 +78,7 @@
     <Compile Include="Assets\Destructible.cs" />
     <Compile Include="Assets\Main.cs" />
     <Compile Include="Assets\Ship.cs" />
+    <Compile Include="Assets\Shore.cs" />
     <Compile Include="Assets\SplashGen.cs" />
     <Compile Include="Assets\SplashTimer.cs" />
     <Compile Include="Assets\WaveScript.cs" />
