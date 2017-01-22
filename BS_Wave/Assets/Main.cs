@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Main : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class Main : MonoBehaviour {
 	public bool showScore;
 	public Slider sl;
 	public Image handle;
+	public GameObject res;
 
 	public GameObject waveClass;
 	// Use this for initialization
@@ -18,6 +20,8 @@ public class Main : MonoBehaviour {
 		wave.GetComponent<WaveScript>().cam = gameObject;
 		wave.GetComponent<WaveScript> ().sl = sl;
 		wave.GetComponent<WaveScript> ().handle = handle;
+		res.SetActive(false);
+		scoreTxt.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -25,8 +29,12 @@ public class Main : MonoBehaviour {
 		if (showScore) {
 			scoreTxt.text = "Score: " + score;
 			scoreTxt.enabled = true;
-		} else {
-			scoreTxt.enabled = false;
+			res.SetActive(true);
 		}
+	}
+
+	public void Restart(){
+		Debug.Log ("click");
+		SceneManager.LoadScene("WaveScene");
 	}
 }

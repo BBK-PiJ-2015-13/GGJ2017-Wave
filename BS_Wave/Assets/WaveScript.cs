@@ -51,6 +51,7 @@ public class WaveScript : MonoBehaviour
 			handle.color = Color.Lerp (Color.red, Color.green, (4 - Mathf.Abs ((rb2d.velocity.x-6)))/4);
 			if (rb2d.velocity.x > maxVel||rb2d.velocity.x < minVel) {
 				ashore = true;
+				cam.GetComponent<Main>().showScore=true;
 			}
 		} else {
 			if (life > 0) {

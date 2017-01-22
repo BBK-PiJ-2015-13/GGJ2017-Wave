@@ -82,6 +82,7 @@
     <Compile Include="Assets\SplashGen.cs" />
     <Compile Include="Assets\SplashTimer.cs" />
     <Compile Include="Assets\WaveScript.cs" />
+    <Compile Include="Assets\button.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
