@@ -1,7 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BS_Wave.CSharp", "BS_Wave.CSharp.csproj", "{4BEDC58C-0B60-A8E9-2D9A-C5D2F7573C3D}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{7AFC8174-C905-6240-871E-B63777ED0FC1}") = "BS_Wave", "Assembly-CSharp.csproj", "{65AFF1BB-13FA-D064-F62D-9B89B85793A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4BEDC58C-0B60-A8E9-2D9A-C5D2F7573C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BEDC58C-0B60-A8E9-2D9A-C5D2F7573C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BEDC58C-0B60-A8E9-2D9A-C5D2F7573C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BEDC58C-0B60-A8E9-2D9A-C5D2F7573C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65AFF1BB-13FA-D064-F62D-9B89B85793A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AFF1BB-13FA-D064-F62D-9B89B85793A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AFF1BB-13FA-D064-F62D-9B89B85793A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AFF1BB-13FA-D064-F62D-9B89B85793A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
